@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kbpmax"
+version = "0.1.0"
+description = "G4BP greedy algorithm for k-BP function maximization"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.6",
+    "seaborn>=0.12",
+    "tqdm>=4.64",
+]
+
+[project.scripts]
+kbpmax = "kbpmax:main"
+
+[tool.setuptools]
+py-modules = ["kbpmax"]
